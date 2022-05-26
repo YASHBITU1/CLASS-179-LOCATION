@@ -67,4 +67,17 @@ map.addControl(
     })
 )
 
+    map.on("click",function(e){
+        destination = e.lngLat
+        console.log(destination)
+    })
+$(function(){
+    $("#navigate-button").click(function(){
+        window.location.href = `navigation1.html?source=${latitude};${longitude}`
+    })
+})
+
+
+
 }
+
